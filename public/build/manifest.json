@@ -1,0 +1,24 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-D-Ewm0a0.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "css": [
+      "assets/app-BC8zcV_v.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Pex_Zp-q.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-BC8zcV_v.css",
+    "src": "resources/sass/app.scss"
+  }
+}
