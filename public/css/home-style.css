@@ -1,0 +1,244 @@
+:root {
+    --primary-blue: #1e3a5f;
+    --dark-blue: #0f172a;
+    --accent-blue: #3b82f6;
+    --light-blue: #eff6ff;
+    --text-dark: #1f2937;
+    --text-muted: #6b7280;
+    --white: #ffffff;
+    --gray-bg: #f3f4f6;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 8px 0;
+    font-size: 0.85rem;
+}
+
+.top-bar a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 15px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.top-bar a:hover {
+    opacity: 1;
+}
+
+/* Main Header */
+.main-header {
+    background-color: var(--white);
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.school-logo-main {
+    height: 80px;
+    width: auto;
+}
+
+.branding-text {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.branding-text h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--primary-blue);
+    letter-spacing: 1px;
+}
+
+.branding-text h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 5px 0;
+    color: var(--dark-blue);
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: var(--primary-blue);
+    padding: 0;
+}
+
+.nav-bar .nav-link {
+    color: var(--white) !important;
+    padding: 15px 20px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.nav-bar .nav-link:hover, .nav-bar .nav-item.active .nav-link {
+    background-color: var(--dark-blue);
+}
+
+.auth-btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-nav-register {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-nav-login {
+    background-color: #dc2626; /* Red like in the image */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(30, 58, 95, 0.8), rgba(15, 23, 42, 0.9)), 
+                url('https://images.unsplash.com/photo-1523050335392-93851179ae22?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Features/Sections */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.section-title .divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-blue);
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 60px 0 20px;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.footer-links h4 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}

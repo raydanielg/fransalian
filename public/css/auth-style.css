@@ -19,68 +19,50 @@ body {
 }
 
 .auth-container {
-    background: #e2e8f0; /* Light gray background for the right side */
-    border-radius: 8px; /* Sharper corners like the image */
+    background: #e2e8f0;
+    border-radius: 8px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     display: flex;
     width: 100%;
-    max-width: 1000px;
-    min-height: 600px;
+    max-width: 800px;
+    min-height: 480px; /* Slightly increased for register fields */
 }
 
 /* Left Side - Info Panel */
 .auth-info-side {
     background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
     color: white;
-    padding: 60px 50px;
-    width: 50%;
+    padding: 40px 35px; /* Reduced padding */
+    width: 45%; /* Slightly adjusted */
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
 }
 
-/* Diagonal stripes effect like the image */
-.auth-info-side::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0.05),
-        rgba(255, 255, 255, 0.05) 10px,
-        transparent 10px,
-        transparent 20px
-    );
-    pointer-events: none;
-}
-
 .auth-info-side h1 {
-    font-size: 2.25rem;
+    font-size: 1.5rem; /* Reduced from 2.25rem */
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 1.2;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     display: inline-block;
 }
 
 .auth-info-side p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.85rem; /* Reduced from 1rem */
+    line-height: 1.5;
     opacity: 0.9;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 300;
 }
 
 /* Right Side - Form Panel */
 .auth-form-side {
-    padding: 60px 80px;
-    width: 50%;
+    padding: 40px 50px; /* Reduced padding */
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,58 +70,46 @@ body {
     background: #e5e7eb;
 }
 
-.school-logo-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .school-logo {
-    width: 120px;
+    width: 90px; /* Reduced from 120px */
     height: auto;
     object-fit: contain;
 }
 
 .auth-form-side h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #1f2937;
-    margin-bottom: 30px;
+    margin-bottom: 15px; /* Reduced spacing */
 }
 
 .form-group {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 12px; /* Tighter vertical spacing */
 }
 
 .custom-input {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px 12px;
     border: 1px solid #d1d5db;
     border-radius: 4px;
     background-color: #f3f4f6;
-    font-size: 0.95rem;
+    font-size: 0.85rem; /* Slightly smaller for more fields */
     transition: all 0.2s;
-}
-
-.custom-input:focus {
-    outline: none;
-    background-color: #fff;
-    border-color: var(--primary-blue);
-    box-shadow: 0 0 0 2px rgba(35, 78, 125, 0.2);
 }
 
 .btn-auth {
     width: 100%;
-    padding: 12px;
+    padding: 10px; /* Reduced padding */
     background-color: var(--primary-blue);
     color: white;
     border: none;
     border-radius: 4px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* Reduced from 0.95rem */
     cursor: pointer;
     transition: background-color 0.2s;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .btn-auth:hover {
